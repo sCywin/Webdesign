@@ -1,0 +1,123 @@
+<!-- Hauptseite in html5 -->
+<!DOCTYPE html>
+<html>
+
+<!-- Tab Name, Metatags und CSS Stylesheet import -->
+<head>
+    <title>Page Title</title>
+    <meta name="author" content="Sebastian Cywinski"></meta>
+    <style type="text/css">
+        @import url("css/main.css");
+    </style>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body onload="main()">
+
+<!-- Hintergrundbild gestreckt über die ganze Seite -->
+<div class="bg"></div>
+<!-- AJAX Cgi Skript Output Box -->
+<div class="outputBox">Nothing loaded yet..</div>
+<!-- Titel Oben Zentral -->
+<header>
+    <h1>
+        <div id="myProgress">
+            <div id="myBar">Animated Title</div>
+        </div>
+    </h1>
+</header>
+
+<!-- Navigationsleiste mit Links -->
+<section>
+    <nav>
+        <span>
+            <a href="Blue.xhtml"> Blue </a>
+            <a href="Red.xhtml"> Red </a>
+            <a href="Green.xhtml"> Green </a>
+            <a href="Violet.xhtml"> Violet </a>
+            <a href="Yellow.xhtml"> Yellow </a>
+            <a href="Tomato.xhtml"> Tomato </a>
+            <a href="https://www.google.com">Google.com</a>
+            <a href="Ufo.xhtml">Ufo</a>
+            <a href="Tables.xhtml">Tables</a>
+        </span>
+    </nav>
+</section>
+
+<!-- Fließtext Zentral -->
+<article>
+    <p>
+        Random senseless Text numero 1 without any Content.
+        <br>
+        Another random senseless Text, numero 2 without any Content.
+        <br>
+        Random Senseless Text, numero 3 no Content.
+    </p>
+</article>
+
+<!-- Fußnoten -->
+<footer>
+    <p>
+        <sup>
+            [1] Sebastian Cywinski
+        </sup>
+        <br>
+        <sup>
+            [2] sebastian.cywinski@student.fh-kiel.de
+        </sup>
+    </p>
+</footer>
+
+<!-- Links zum SVG Bild, Gif und zur MP4 Datei -->
+<section>
+    <ul>
+        <li>
+            <a href="Background.html"> Background-Image </a>
+        </li>
+        <li>
+            <a href="Shipgif.html"> Gif </a>
+        </li>
+        <li>
+            <a href="mariomp4.html"> MP4 </a>
+        </li>
+    </ul>
+</section>
+
+<!-- Eingabe Felder für Nicknamen, Passwort, Email usw.-->
+<aside>
+    <form id="userinfo">
+        <label for="Benutzername">Benutzername:
+            <input id="Benutzername" name="Benutzername" required>
+        </label>
+        <br>
+        <label for="password">Password:
+            <input type="password" id="password" name="password" required>
+        </label>
+        <br>
+        <label for="Email">Email:
+            <input type="email" id="Email" name="Email" required>
+        </label>
+        <br>
+        <label for="männl">männlich</label>
+        <input type="radio" id="männl" name="geschlecht" value="0">
+        <label for="weibl">weiblich</label>
+        <input type="radio" id="weibl" name="geschlecht" value="1">
+
+        <label for="alter">über 18:</label>
+        <input type="checkbox" id="alter" name="alter" required>
+        <br>
+        <div id="submitButtonStyle">
+            <input type="submit" value="Submit" name="submit" id="submit">
+            <input type="reset" value="Reset" name="reset" id="reset">
+        </div>
+    </form>
+    <button onclick="visible();">JavaScript ON</button>
+    <button onclick="invisible();">JavaScript OFF</button>
+    <button onclick="move()">Animation</button>
+    <button onclick="example()">Beispiel</button>
+</aside>
+
+</body>
+</html>
